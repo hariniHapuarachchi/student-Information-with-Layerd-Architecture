@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fxparent" prefHeight="482.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageParentController">
+    <children>
+        <Label layoutX="190.0" layoutY="23.0" prefHeight="26.0" prefWidth="296.0" text="PARENT DETAILS">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="81.0" text="Student ID : " />
+        <Label layoutX="38.0" layoutY="121.0" text="Parent Name : " />
+        <Label layoutX="36.0" layoutY="155.0" text="Mobile 1 : " />
+        <Label layoutX="36.0" layoutY="191.0" text="Mobile 2 : " />
+        <Label layoutX="39.0" layoutY="227.0" text="Email : " />
+        <Label layoutX="34.0" layoutY="282.0" text="Designation : " />
+        <Label layoutX="34.0" layoutY="320.0" text="Working Place : " />
+        <Label layoutX="36.0" layoutY="357.0" text="Working Address : " />
+        <TextField fx:id="pID" layoutX="162.0" layoutY="77.0" prefHeight="26.0" prefWidth="449.0" />
+        <TextField fx:id="pname" layoutX="160.0" layoutY="115.0" prefHeight="26.0" prefWidth="449.0" />
+        <TextField fx:id="pm1" layoutX="160.0" layoutY="157.0" prefHeight="26.0" prefWidth="449.0" promptText="xxx-xxxxxxx" />
+        <TextField fx:id="pm2" layoutX="160.0" layoutY="192.0" prefHeight="26.0" prefWidth="449.0" promptText="xxx-xxxxxxx" />
+        <TextField fx:id="pmail" layoutX="161.0" layoutY="229.0" prefHeight="26.0" prefWidth="449.0" promptText="xxx.xxx@xx.xx" />
+        <TextField fx:id="pdes" layoutX="161.0" layoutY="267.0" prefHeight="26.0" prefWidth="449.0" />
+        <TextField fx:id="pPlace" layoutX="162.0" layoutY="307.0" prefHeight="26.0" prefWidth="449.0" />
+        <TextField fx:id="paddress" layoutX="165.0" layoutY="346.0" prefHeight="26.0" prefWidth="449.0" />
+        <Button layoutX="300.0" layoutY="396.0" mnemonicParsing="false" onAction="#parentAdd" prefHeight="26.0" prefWidth="95.0" text="ADD" />
+        <Button layoutX="546.0" layoutY="23.0" mnemonicParsing="false" onAction="#parentHome" prefHeight="26.0" prefWidth="82.0" text="HOME" />
+    </children>
+</AnchorPane>

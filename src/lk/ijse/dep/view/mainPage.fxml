@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.MainPageController">
+   <children>
+      <Label layoutX="66.0" layoutY="218.0" text="Registration" />
+      <Label layoutX="176.0" layoutY="218.0" text="Manage Course" />
+      <Label layoutX="300.0" layoutY="218.0" text="Manage Batch" />
+      <Label layoutX="421.0" layoutY="218.0" text="Manage Student" />
+      <Label layoutX="190.0" layoutY="26.0" prefHeight="59.0" prefWidth="179.0" text="      IJSE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="student" fitHeight="85.0" fitWidth="103.0" layoutX="47.0" layoutY="126.0" onMouseClicked="#clickRegistration" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="126.0">
+         <image>
+            <Image url="@../images/User.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="course" fitHeight="93.0" fitWidth="84.0" layoutX="176.0" layoutY="122.0" onMouseClicked="#clickManageCourse" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="126.0">
+         <image>
+            <Image url="@../images/GraduationCap.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="batch" fitHeight="85.0" fitWidth="88.0" layoutX="300.0" layoutY="126.0" onMouseClicked="#clickManageBatch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/UserGroups.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mSt" fitHeight="67.0" fitWidth="88.0" layoutX="414.0" layoutY="135.0" onMouseClicked="#clickManageStudent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Books.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

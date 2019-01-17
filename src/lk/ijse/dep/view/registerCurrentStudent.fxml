@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fxCurrentSt" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageCurrentStudentController">
+   <children>
+      <Label layoutX="32.0" layoutY="82.0" text="Student ID :" />
+      <Label layoutX="153.0" layoutY="26.0" text="CURRENT STUDENT">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="123.0" text="Course : " />
+      <Label layoutX="32.0" layoutY="165.0" text="Batch : " />
+      <TextField fx:id="currentSID" layoutX="122.0" layoutY="77.0" prefHeight="26.0" prefWidth="390.0" />
+      <TextField fx:id="currentCrs" layoutX="122.0" layoutY="118.0" prefHeight="26.0" prefWidth="390.0" />
+      <TextField fx:id="currentBID" layoutX="122.0" layoutY="160.0" prefHeight="26.0" prefWidth="390.0" />
+      <TableView fx:id="currentStudentTab" layoutX="22.0" layoutY="227.0" prefHeight="166.0" prefWidth="557.0">
+        <columns>
+          <TableColumn prefWidth="279.0" text="Student ID" />
+          <TableColumn prefWidth="277.0" text="Batch ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="239.0" layoutY="194.0" mnemonicParsing="false" onAction="#saveCurrentCrs" prefHeight="26.0" prefWidth="85.0" text="Save" />
+      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" onAction="#createCrrntNewCrs" text="New Course" />
+      <Button layoutX="470.0" layoutY="13.0" mnemonicParsing="false" onAction="#CurrentStudentHome" prefHeight="26.0" prefWidth="85.0" text="Home" />
+   </children>
+</AnchorPane>
